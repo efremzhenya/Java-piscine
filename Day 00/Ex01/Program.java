@@ -2,13 +2,15 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class Program {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Integer number = scanner.nextInt();
-        if (number <= 1)
-            System.out.print("Illegal Argument");
+        if (number <= 1) {
+            System.err.print("Illegal Argument");
+            System.exit(-1);
+        }
         else
         {
             Integer root = findRoot(number);
