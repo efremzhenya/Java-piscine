@@ -1,5 +1,3 @@
-package com.company.Program;
-
 import java.util.Scanner;
 
 public class Program {
